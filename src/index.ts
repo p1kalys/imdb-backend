@@ -34,6 +34,6 @@ mongoose.connect(MONGO_URL)
 mongoose.set('strictQuery', true);
 mongoose.connection.on("error", (error: Error) => console.log(error))
 
-app.use("/", router())
+app.use("/api/", router())
 
 moment.tz.setDefault("Asia/Kolkata");
